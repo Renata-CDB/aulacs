@@ -14,7 +14,7 @@ namespace pastaEstudo
             int idade = 100 ^ 25;
             Console.WriteLine(idade);
 
-            Console.WriteLine($"{idade}, {casa}");
+            Console.WriteLine($"O primeiro valor:{idade}, O segundo valor: {casa}");
 
 
         }
