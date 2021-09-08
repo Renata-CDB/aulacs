@@ -14,8 +14,16 @@ namespace calculadora
             Console.WriteLine("Digite outro numero");
             numero2 = Console.ReadLine();
 
-            soma = Double.Parse(numero) + Double.Parse(numero2);
-            Console.WriteLine($"soma: {soma}");
+            Console.WriteLine("Digite um operador\n + - / * % ^");
+            string operador = Console.ReadLine();
+            switch(operador)
+            {
+                case "+":
+                    soma = Double.Parse(numero) + Double.Parse(numero2);
+                    Console.WriteLine($"soma: {soma}");
+                    break;
+            }
+
 
         }
     }
