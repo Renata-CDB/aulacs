@@ -7,7 +7,7 @@ namespace calculadora
         static void Main(string[] args)
         {
             string numero = "", numero2  = "";
-            double soma, subtracao, divisao;
+            double soma, subtracao, divisao, multiplicacao, exponenciacao, restoDivisaoInt;
 
             Console.WriteLine("Digite um numero");
             numero = Console.ReadLine();
@@ -30,6 +30,20 @@ namespace calculadora
                     divisao = Double.Parse(numero) / Double.Parse(numero2);
                     Console.WriteLine($"divisão: {divisao}");
                     break;
+                case "*":
+                    multiplicacao = Double.Parse(numero) * Double.Parse(numero2);
+                    Console.WriteLine($"multiplicacao: {multiplicacao}");
+                    break;
+                case "%":
+                    restoDivisaoInt = Double.Parse(numero) % Double.Parse(numero2);
+                    Console.WriteLine($"resto da divisão inteira: {restoDivisaoInt}");
+                    break;
+                case "^":
+                    //exponenciacao = Double.Parse(numero) ^ Double.Parse(numero2);
+                    exponenciacao = Math.Pow(Double.Parse(numero) , Double.Parse(numero2));
+                    Console.WriteLine($"exponenciacao: {exponenciacao}");
+                    break;         
+
             }
 
 
